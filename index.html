@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Super Site d'Affiliation</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #333;
+            --light-color: #f4f4f4;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--secondary-color);
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--secondary-color);
+            padding: 0.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background: var(--primary-color);
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-img {
+            height: 200px;
+            background: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #3e8e41;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--secondary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur [Votre Site]</h1>
+        <p>Découvrez les meilleures recommandations pour [Votre Niche]</p>
+    </header>
+    
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Produits</a>
+        <a href="#">Catégories</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <div class="hero">
+        <div class="container">
+            <h2>Les Meilleurs Produits Locaux</h2>
+            <p>Trouvez ici nos sélections exclusives pour [Votre Ville/Région]</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Nos Recommandations</h2>
+        <div class="products">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                <div class="product-info">
+                    <h3>Nom du Produit 1</h3>
+                    <p>Description courte du produit et pourquoi nous le recommandons.</p>
+                    <a href="[LIEN_AFFILIE]" class="btn" target="_blank">Voir l'offre</a>
+                </div>
+            </div>
+            
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                <div class="product-info">
+                    <h3>Nom du Produit 2</h3>
+                    <p>Description courte du produit et pourquoi nous le recommandons.</p>
+                    <a href="[LIEN_AFFILIE]" class="btn" target="_blank">Voir l'offre</a>
+                </div>
+            </div>
+            
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <div class="product-img" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                <div class="product-info">
+                    <h3>Nom du Produit 3</h3>
+                    <p>Description courte du produit et pourquoi nous le recommandons.</p>
+                    <a href="[LIEN_AFFILIE]" class="btn" target="_blank">Voir l'offre</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 [Votre Site]. Tous droits réservés.</p>
+        <p><a href="#" style="color: var(--primary-color);">Mentions légales</a> | <a href="#" style="color: var(--primary-color);">Politique de confidentialité</a></p>
+    </footer>
+</body>
+</html>
